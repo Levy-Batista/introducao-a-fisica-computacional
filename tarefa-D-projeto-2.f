@@ -1,11 +1,11 @@
       program tarefaD
 
 c     até o cálculo da entropia de fato, o código é o mesmo da tarefa-C
-      parameter (M = 10000, N = 10, p = 1.0/4)
+      parameter (M = 10000, N = 10, p = 1.e0/4)
       integer*8 icont, jcont, k, l, ipos, ix, iy
       dimension ipos(-N:N, -N:N)
 
-      s = 0
+      s = 0.e0
       do k = -N, N
         do l = -N, N
           ipos(k, l) = 0
