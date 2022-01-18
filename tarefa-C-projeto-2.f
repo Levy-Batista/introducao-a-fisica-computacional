@@ -1,15 +1,15 @@
       program tarefaC
 
 c     no caso bidimensional, p assume o valor 1/4
-      parameter (M = 10000, N = 10, p = 1.0/4)
+      parameter (M = 10000, N = 10, p = 1.e0/4)
       integer*8 k, l, tmpx, tmpy
 c     agora, a quantidade em cada posição é armazenada numa matriz 
       dimension ipos(-N:N, -N:N)
       open(1, file='1saida-C-11212550')
-      xmed = 0
-      xqmed = 0
-      ymed = 0
-      yqmed = 0
+      xmed = 0.e0
+      xqmed = 0.e0
+      ymed = 0.e0
+      yqmed = 0.e0
       do k = -N, N
         do l = -N, N
           ipos(k, l) = 0
