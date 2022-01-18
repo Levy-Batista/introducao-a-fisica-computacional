@@ -2,13 +2,13 @@
 
 c     M -> número de andarilhos, N -> número de passos
 c     p -> probabilidade de dar um passo à direita 
-      parameter (M = 1000000, N = 1000, p = 1.0/2)
+      parameter (M = 1000000, N = 1000, p = 1.e0/2)
       integer*8 l, ipos
 c     array que guarda a quantidade de andarilhos em cada posição
       dimension ipos(-N/2:N/2)
       open(1, file='1saida-B-11212550')
-      xmed = 0
-      xqmed = 0
+      xmed = 0.e0
+      xqmed = 0.e0
       do k = -N/2, N/2
         ipos(k) = 0
       end do
